@@ -4,12 +4,13 @@ const res = require('express/lib/response');
 const app = express();
 const path = require('path');
 const port = 3000;
+app.use(express.static('public'))
 //home page
 /*app.get('/home',(req,res)=>{
     res.send("home page ");
 })*/
 
-app.get('/',(req,res)=>{
+/*app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'index.html'));
 })
 
@@ -34,9 +35,9 @@ app.get('/images',(req,res)=>{
     res.send("images page ");
 })*/
 //about page
-app.get('/about',(req,res)=>{
+/*app.get('/about',(req,res)=>{
     res.sendFile(path.join(__dirname,'about.html'));
-})
+})*/
 app.listen(port,()=>{
     console.log(`app lisented on port:${port}`);
 })
