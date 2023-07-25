@@ -18,7 +18,7 @@ app.get('/product',(req,res)=>{
     res.sendFile(path.join(__dirname,'product.html'));
 })
 
-app.post('/product',(req,res)=>{
+/*app.post('/product',(req,res)=>{
     res.send("product created ");
 })
 
@@ -32,7 +32,7 @@ app.delete('/product',(req,res)=>{
 //images page
 app.get('/images',(req,res)=>{
     res.send("images page ");
-})
+})*/
 //about page
 app.get('/about',(req,res)=>{
     res.sendFile(path.join(__dirname,'about.html'));
